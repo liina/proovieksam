@@ -7,6 +7,7 @@ import java.util.ArrayList;
  *
  * Käesolevat klassi ei tohi muuta! Arvad, et ei jää vahele? :)
  */
+/*
 public class Objektorienteeritus {
 
     public static void main(String[] args) {
@@ -31,4 +32,4 @@ public class Objektorienteeritus {
     }
 }
 
-
+*/

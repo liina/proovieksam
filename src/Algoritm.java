@@ -17,8 +17,26 @@ public class Algoritm {
 
     // Siia meetodi sisse kirjuta lahendus.
     private static int allaKeskmise(int[] ints) {
-
-        return 0;
+        int tudengiteArv = ints.length;
+        int summa = 0;
+        int keskmine;
+        int allaKeskmise = 0;
+        for (int i = 0; i < tudengiteArv ; i++) {
+            int hinne = ints[i];
+            if (hinne > 60) {
+                hinne = 60;
+            }
+            summa += hinne;
+        }
+        keskmine = summa / tudengiteArv;
+        System.out.println("Keskmine " + keskmine);
+        for (int i = 0; i < tudengiteArv ; i++) {
+            int hinne = ints[i];
+            if (hinne < keskmine) {
+                allaKeskmise++;
+            }
+        }
+        return allaKeskmise;
     }
 
 }
