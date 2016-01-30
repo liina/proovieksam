@@ -7,7 +7,7 @@ import java.util.ArrayList;
  *
  * Käesolevat klassi ei tohi muuta! Arvad, et ei jää vahele? :)
  */
-/*
+
 public class Objektorienteeritus {
 
     public static void main(String[] args) {
@@ -30,6 +30,45 @@ public class Objektorienteeritus {
         System.out.println("Pardal on nii mitu inimest: " + raidur.reisijateArv());
         System.out.println("Laeva nimi on " + raidur.misNimi());
     }
+
+    private static class Laev {
+        private String laevaNimi;
+        private ArrayList<String> reisijad = new ArrayList<String>();
+
+        public Laev (String laevaNimi) {
+
+            this.laevaNimi=laevaNimi;
+        }
+        public void lisaReisija(String s) {
+
+            reisijad.add(s);
+        }
+
+        public String misNimi() {
+
+            return laevaNimi;
+        }
+
+        public void eemaldaReisija(String s) {
+            reisijad.remove(s);
+        }
+
+        public String votaReisijad() {
+            if(reisijad.size() > 0) {
+                return reisijad.toString();
+            }
+            return "";
+        }
+
+        public String reisijateArv() {
+
+            return Integer.toString(reisijad.size());
+        }
+
+        public void kalaHammustasKummipaatiAugu() {
+            reisijad.clear();
+        }
+    }
 }
 
-*/
+

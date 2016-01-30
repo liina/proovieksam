@@ -1,7 +1,10 @@
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Slider;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
@@ -23,8 +26,8 @@ public class JavaFX extends Application {
         slider.valueProperty().addListener((observable, vanaVaartus, uusVaartus) -> {
             ring.setRadius(uusVaartus.intValue());
         });
-
         stack.getChildren().addAll(ring,slider);
+        stack.setAlignment(slider, Pos.BOTTOM_CENTER);
 
         primaryStage.show();
     }
